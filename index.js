@@ -23,22 +23,24 @@ function init() {
     },
     {
         type: 'list',
-        name: 'position',
-        message: 'Please choose employee role: ',
+        name: 'role',
+        message: "Please choose employee's position: ",
         choices: ['Manager', 'Engineer', 'Intern']
     }]
     ).then(employeeinfo => {
-        if(employeeinfo.position === 'Manager') {
+        if(employeeinfo.role === 'Manager') {
             //new function for manager prompt goes here
             addManager(employeeinfo);
-        } else if (employeeinfo.position === 'Engineer') {
+        } else if (employeeinfo.role === 'Engineer') {
             //new function for engineer prompt goes here
+            addEngineer(employeeinfo)
         } else {
             //new function for intern prompt goes here
         }
     })
 }
 
+//function to add a manager
 function addManager(employeeinfo) {
     inquirer
     .prompt({
@@ -53,6 +55,7 @@ function addManager(employeeinfo) {
     })
 };
 
+//asks user if they want to add another employee
 function addEmployee(){
     inquirer
     .prompt({
@@ -70,4 +73,5 @@ function addEmployee(){
 
 }
 
+//call to initialize the function
 init();
