@@ -22,7 +22,7 @@ Open terminal, install dependencies using the command 'npm_install', then run in
 
 ## Usage
 
-Start the program by using typing "node index" in the terminal
+Start the program by typing "node index" in the terminal
 ![Example1_gif](./src/imgs/gif1.gif)
 
 Follow on screen prompt to generate values for HTML.  
