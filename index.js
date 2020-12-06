@@ -44,7 +44,7 @@ function addManager() {
             name: 'managerId',
             message: "Enter team manager's ID number: ",
             validate: managerId => {
-                if (isNaN(managerId)){
+                if (isNaN(managerId)) {
                     console.log('\n Please input numbers only.')
                     return false;
                 } else {
@@ -107,7 +107,7 @@ function addEngineer(pickRole) {
             message: "Enter engineer's ID number: ",
             validate: id => {
                 if (isNaN(id)) {
-                    console.log('Please input numbers only');
+                    console.log('\n Please input numbers only');
                     return false
                 } else {
                     return true;
@@ -122,7 +122,7 @@ function addEngineer(pickRole) {
                 if(github) {
                     return true;
                 } else {
-                    console.log("Please enter engineer's Github username!")
+                    console.log("\n Please enter engineer's Github username!")
                 return false;
                 }
             }
@@ -158,7 +158,7 @@ function addIntern(pickRole) {
                 if (email.match(val)) {
                     return true;
                 } else {
-                    console.log('Please enter a valid e-mail address.');
+                    console.log('\n Please enter a valid e-mail address.');
                     return false;
                 }
             }
@@ -169,7 +169,7 @@ function addIntern(pickRole) {
             message: "Enter intern's ID number: ",
             validate: id => {
                 if (isNaN(id)) {
-                    console.log('Please input numbers only');
+                    console.log('\n Please input numbers only');
                     return false
                 } else {
                     return true;
@@ -184,7 +184,7 @@ function addIntern(pickRole) {
                 if(school) {
                     return true;
                 } else {
-                    console.log("Please enter intern's school name!")
+                    console.log("\n Please enter intern's school name!")
                 return false;
                 }
             }
