@@ -29,10 +29,10 @@ Follow on screen prompt to generate values for HTML.
 ![Example2_gif](./src/imgs/gif2.gif)
 
 Menu to add another employee:
-![Example3_gif](.src/imgs/gif3.gif)
+![Example3_gif](./src/imgs/gif3.gif)
 
 The program checks for input errors:
-![Example4_gif](.src/imgs/gif4.gif)
+![Example4_gif](./src/imgs/gif4.gif)
 
 ## Screenshots
 
